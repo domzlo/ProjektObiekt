@@ -10,5 +10,4 @@ public class Rodzina {
     public int lacznaWaga(){
         return mama.waga + tata.waga + dziecko.waga;
     }
-
 }
