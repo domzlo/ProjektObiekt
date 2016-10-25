@@ -3,7 +3,7 @@ package com.company;
 
 public class Osoba1 {
     String imie, nazwisko;
-    int wiek, wzrost;
+    int wiek, wzrost, waga;
 
     boolean pełnoletnia() {
 
@@ -13,4 +13,5 @@ public class Osoba1 {
     boolean wysoki() {
         return wzrost >= 180;
     }
+
 }

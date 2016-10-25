@@ -8,14 +8,27 @@ public class Pełnoletnia {
         tato.nazwisko = "Kowalski";
         tato.wiek = 35;
         tato.wzrost = 150;
+        tato.waga = 90;
+
+        Osoba1 mama = new Osoba1();
+        mama.wiek = 35;
+        mama.waga = 65;
 
         Osoba1 córka = new Osoba1();
         córka.imie = "Ola";
         córka.nazwisko = "Kowalska";
         córka.wiek = 12;
         córka.wzrost = 200;
+        córka.waga = 40;
 
-        System.out.println(tato.pełnoletnia() + " " + tato.wysoki());
-        System.out.println(córka.pełnoletnia() + " " + córka.wysoki());
+        Rodzina rodzina = new Rodzina();
+        rodzina.tata = tato;
+        rodzina.mama = mama;
+        rodzina.dziecko = córka;
+
+        int lacznaWagaRodziny = rodzina.lacznaWaga();
+//        metoda w klasie rodzina
+        System.out.println("Rodzina waży łącznie: " + lacznaWagaRodziny + " kg.");
+
     }
 }
