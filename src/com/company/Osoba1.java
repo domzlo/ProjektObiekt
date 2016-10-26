@@ -1,6 +1,5 @@
 package com.company;
 
-
 public class Osoba1 {
     String imie, nazwisko;
     int wiek, wzrost, waga;
