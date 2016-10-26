@@ -22,16 +22,22 @@ public class Pełnoletnia {
         córka.wzrost = 200;
         córka.waga = 40;
 
+        Osoba1 syn = new Osoba1();
+        syn.imie = "Janek";
+        syn.nazwisko = "Kowalski";
+        syn.wiek = 18;
+        syn.wzrost = 170;
+        syn.waga = 80;
+
         ArrayList<Osoba1> dzieci = new ArrayList<>();
         dzieci.add(córka);
-
-        int size = dzieci.size();
-        System.out.println(size);
+        dzieci.add(syn);
 
         Rodzina rodzina = new Rodzina();
         rodzina.tata = tato;
         rodzina.mama = mama;
-        rodzina.dziecko = córka;
+//        rodzina.dziecko = córka;
+//        rodzina.dziecko = syn;
         rodzina.dzieci = dzieci;
 
         int lacznaWagaRodziny = rodzina.lacznaWaga();

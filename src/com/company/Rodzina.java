@@ -9,16 +9,16 @@ public class Rodzina {
     Osoba1 dziecko;
     ArrayList<Osoba1> dzieci;
 
-    public int size = dzieci.size();
+
 
     public int lacznaWaga() {
-        for(int k=0; k <= size; k++) {
+        int size = dzieci.size();
+        int waga = mama.waga + tata.waga;
+        for(int k=0; k < size; k++) {
             Osoba1 dziecko = dzieci.get(k);
-            int wagaDziecka = dziecko.waga;
-            System.out.println(wagaDziecka);
+            waga += dziecko.waga;
         }
-
-//        return mama.waga + tata.waga + dziecko.waga;
+        return waga;
 
 
 
