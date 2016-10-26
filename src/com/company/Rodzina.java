@@ -19,11 +19,5 @@ public class Rodzina {
             waga += dziecko.waga;
         }
         return waga;
-
-
-
     }
-
-
-
 }

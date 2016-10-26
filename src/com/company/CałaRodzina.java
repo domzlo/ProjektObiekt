@@ -1,7 +1,7 @@
 package com.company;
 import java.util.ArrayList;
 
-public class Pełnoletnia {
+public class CałaRodzina {
 
     public static void main(String[] args) {
         Osoba1 tato = new Osoba1();
