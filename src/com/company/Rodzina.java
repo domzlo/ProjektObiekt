@@ -32,7 +32,6 @@ public class Rodzina {
 //        dzieci = dzieci1;
 //    }
 
-
     public int lacznaWaga() {
         int size = this.dzieci.size();
         int waga = mama.PobierzWagę() + tata.PobierzWagę(); /* stosujemy metodę PobierzWagę na mamie i tacie */
