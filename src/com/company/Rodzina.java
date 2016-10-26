@@ -35,7 +35,7 @@ public class Rodzina {
 
     public int lacznaWaga() {
         int size = this.dzieci.size();
-        int waga = mama.PobierzWagę() + tata.PobierzWagę();
+        int waga = mama.PobierzWagę() + tata.PobierzWagę(); /* stosujemy metodę PobierzWagę na mamie i tacie */
         for(int k=0; k < size; k++) {
             Osoba dziecko = this.dzieci.get(k);
             waga += dziecko.PobierzWagę();

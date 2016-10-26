@@ -23,8 +23,7 @@ public class Osoba {
         return waga;
     }
 
-    boolean pełnoletnia() {
-
-        return wiek >= 18;
-    }
+//    boolean pełnoletnia() {
+//        return wiek >= 18;
+//    }
 }
