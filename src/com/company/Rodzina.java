@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Rodzina {
 
-    Osoba mama;
-    Osoba tata;
+    private Osoba mama;
+    private Osoba tata;
 //    Osoba dziecko;
     private ArrayList<Osoba> dzieci;
 
@@ -35,10 +35,10 @@ public class Rodzina {
 
     public int lacznaWaga() {
         int size = this.dzieci.size();
-        int waga = mama.waga + tata.waga;
+        int waga = mama.PobierzWagę() + tata.PobierzWagę();
         for(int k=0; k < size; k++) {
             Osoba dziecko = this.dzieci.get(k);
-            waga += dziecko.waga;
+            waga += dziecko.PobierzWagę();
         }
         return waga;
     }
